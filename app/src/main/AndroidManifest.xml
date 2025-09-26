@@ -11,15 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design_UI_Application">
+
+        <!-- LoginActivity là màn hình khởi động -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Màn hình đăng ký -->
+        <activity
+            android:name=".RegsisterActivity"
+            android:exported="false" />
+
+        <!-- MainActivity chỉ mở sau khi đăng nhập -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
